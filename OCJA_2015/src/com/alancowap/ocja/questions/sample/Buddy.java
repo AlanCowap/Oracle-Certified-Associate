@@ -12,7 +12,6 @@ package com.alancowap.ocja.questions.sample;
 
 public class Buddy {
 	public static void main(String[] args) {
-		
 		def:
 			for(short s = 1; s < 7; s++) {
 				if(s == 4) break def;
