@@ -10,7 +10,6 @@ package com.alancowap.ocja.codechallenge.phone;
 
 public class PhoneApp {
 
-
 	public static void main(String[] args) {
 		//Using individual getters and setters
 		Phone s5 = new Phone();
@@ -33,6 +32,14 @@ public class PhoneApp {
 		x55.setAll("HTC", "X55", 5.5F, 5.0F);
 		x55.printAll();
 		
+		//Calculate total screen size for all three devices
+		float totalScreenSize = s5.getScreenSize() + s6.getScreenSize() 
+									+ x55.getScreenSize();
+		System.out.println("Total screensize is " + totalScreenSize + " inches" );
+		
+		//Calculate total memory for all three devices
+		float totalMemoryGB = s5.getMemoryGB() + s6.getMemoryGB() + x55.getMemoryGB();
+		System.out.println("Total memory is " + totalMemoryGB + " GB" );
 	}
 
 }
