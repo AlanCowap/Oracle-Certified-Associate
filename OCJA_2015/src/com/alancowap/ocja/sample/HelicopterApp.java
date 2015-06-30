@@ -17,10 +17,10 @@ public class HelicopterApp {
 		System.out.println("Hello world");
 		
 		Helicopter chopper = new Helicopter();
-		System.out.println("Current altitude " + chopper.getCurrentAltitude() );
+		System.out.println("Current altitude (feet) " + chopper.getCurrentAltitude() );
 		chopper.setCurrentAltitude(1000.0D);
-		System.out.println("Current altitude " + chopper.getCurrentAltitude() );
-		
+		System.out.println("Current altitude (feet) " + chopper.getCurrentAltitude() );
+		System.out.println( chopper.getCurrentAltitudeInMeters() );
 	}
 
 }
