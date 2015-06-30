@@ -14,7 +14,7 @@ public class BicycleApp {
 	public static void main(String[] args) {
 		Bicycle myBike = new Bicycle();
 		System.out.println( myBike.getNumGears() );//5
-		myBike.setNumGears(100);
+		myBike.setNumGears(10);
 		System.out.println(myBike.getNumGears() );//10
 	}
 }
