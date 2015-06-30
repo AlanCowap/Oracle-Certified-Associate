@@ -1,0 +1,16 @@
+In teams of 4.
+
+Create a Class named “Phone” that will store information about a Phone, such as manufacturer, model, screen size, and memory capacity.
+
+Then create a second class named “PhoneApp” with a main method that will create a Phone object and get and set it’s values, displaying them on screen:
+Samsung, S5, 5 inches, 4GB
+
+Then create a second phone: Samsung, S6, 6 inches, 8GB
+
+Create a third phone: HTC, X55, 5.5 inches, 5GB
+
+Now display the sum total of each of the following for the phones: screen size, memory.
+
+There will be no user interaction with the program, other than running it.
+ 
+Create a class named “Tablet”, which has appropriate state and behaviour. Create 4 tablets and total their screensize and memory.
