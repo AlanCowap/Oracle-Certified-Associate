@@ -1,7 +1,7 @@
 /** 
  *  Simple class to demo a 1D Array
  *  Create an array of int, initialise with values in range 1..100 inclusive
- *  Calculate, min, max, mean
+ *  Calculate, min, max, mean, total
  *  
  *  
  * @author Alan Cowap 
@@ -47,7 +47,8 @@ public class ArrayApp {
 			total = total + scores[i];
 		}
 		float mean = total / scores.length;
-		System.out.println("\nMean is " + mean);
+		System.out.println("\nTotal is " + (int) total);
+		System.out.println("Mean is " + mean);
 		
 		//Calculate the max value
 		int max=scores[0];
