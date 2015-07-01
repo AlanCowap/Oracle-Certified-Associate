@@ -1,6 +1,7 @@
 /** 
  *  Simple class to demo a 1D Array
- *  
+ *  Create an array of int, initialise with values in range 1..100 inclusive
+ *  Calculate, min, max, mean
  *  
  *  
  * @author Alan Cowap 
@@ -25,8 +26,6 @@ public class ArrayApp {
 		
 		//Create a random number generator
 		Random rand = new Random();
-//		int num = rand.nextInt(100);
-//		System.out.println(num);
 		
 		//Initialise elements of array with values in range 1..100 (inclusive)		
 		for(int i=0; i < scores.length; ++i){// iterate over array
@@ -66,10 +65,7 @@ public class ArrayApp {
 				min = scores[i];
 			}
 		}
-		System.out.println("Min is " + min);
-		
-		
-		
+		System.out.println("Min is " + min);		
 		
 	}
 
