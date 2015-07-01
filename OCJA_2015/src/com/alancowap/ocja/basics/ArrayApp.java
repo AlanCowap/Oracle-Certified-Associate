@@ -10,6 +10,8 @@
  */
 package com.alancowap.ocja.basics;
 
+import java.util.Random;
+
 public class ArrayApp {
 
 	public static void main(String[] args) {
@@ -17,17 +19,23 @@ public class ArrayApp {
 		
 		for(int i=0; i < scores.length; ++i){// iterate over array
 			scores[i] = 16;					// assign values
-			System.out.println(scores[i]);	// read values
+			System.out.print(scores[i]);	// read values
 		}
+		System.out.println("");
+		
+		//Create a random number generator
+		Random rand = new Random();
+//		int num = rand.nextInt(100);
+//		System.out.println(num);
 		
 		//Initialise elements of array with values in range 1..100 (inclusive)		
 		for(int i=0; i < scores.length; ++i){// iterate over array
-			scores[i] = i+1;
+			scores[i] = rand.nextInt(100) + 1; // i+1;
 			System.out.print(scores[i] + " ");	// read values
 		}
 		
 		//Calculate the arithmetic mean (average)
-		/* 
+		/* pseudocode
 		   declare a variable to hold the total, initialise to 0
 			BEGIN LOOP 
 				iterate through the array
@@ -50,6 +58,17 @@ public class ArrayApp {
 			}
 		}
 		System.out.println("Max is " + max);
+
+		//Calculate the min value
+		int min = scores[0];
+		for(int i=1; i < scores.length; ++i){
+			if(scores[i] < min ) {
+				min = scores[i];
+			}
+		}
+		System.out.println("Min is " + min);
+		
+		
 		
 		
 	}
