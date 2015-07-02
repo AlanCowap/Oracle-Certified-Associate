@@ -37,9 +37,24 @@ public class StateApp {
 		
 		// Get user input
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Please enter a score> ");
-		int score = scan.nextInt();
-		System.out.println(score);		
+		System.out.println("1. Enter name ");
+		System.out.println("2. Enter age ");
+		System.out.println("3. Quit ");
+		System.out.print("Please choose> ");
+		int userChoice = scan.nextInt();
+		System.out.println("You chose " + userChoice);
+	
+		//Evaluate user choice		
+		if(1 == userChoice){
+			System.out.println("You want to Enter name");
+		}
+		if(2 == userChoice){
+			System.out.println("You want to Enter age");
+		}
+		if(3 == userChoice){
+			System.out.println("You want to Exit");
+		}
+
 		
 	}
 
