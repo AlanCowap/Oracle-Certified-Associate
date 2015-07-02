@@ -1,6 +1,7 @@
 /** 
  *  Simple class to demo pre and post increment and decrement operators (++, --)
  *  Demo use of "if" statement
+ *  Show how to use Scanner class to get user input from the command line
  *  
  * @author Alan Cowap 
  * @version 1.0  
@@ -9,10 +10,12 @@
  */
 package com.alancowap.ocja.javastatements;
 
+import java.util.Scanner;
+
 public class StateApp {
 
 	public static void main(String[] args) {
-		int age = 21;
+		int age = 1;
 		System.out.println("Initial age is " + age);
 		
 		// Increment
@@ -31,6 +34,12 @@ public class StateApp {
 		if(age > 17){
 			System.out.println("Welcome!");
 		}
+		
+		// Get user input
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Please enter a score> ");
+		int score = scan.nextInt();
+		System.out.println(score);		
 		
 	}
 
