@@ -1,6 +1,6 @@
 /** 
  *  Simple class to demo pre and post increment and decrement operators (++, --)
- *  
+ *  Demo use of "if" statement
  *  
  * @author Alan Cowap 
  * @version 1.0  
@@ -26,6 +26,11 @@ public class StateApp {
 		System.out.println("Post decremented age is " + age);		
 		--age;
 		System.out.println("Pre decremented age is " + age);		
+		
+		// Conditional statement - if
+		if(age > 17){
+			System.out.println("Welcome!");
+		}
 		
 	}
 
