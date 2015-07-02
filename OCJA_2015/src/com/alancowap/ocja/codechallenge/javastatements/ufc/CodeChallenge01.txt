@@ -1,0 +1,23 @@
+In teams of 3.
+
+A new client, the UFC, have contracted your team to develop a prototype Application on their behalf. Initially the UFC have the following five weight divisions (inclusive):
+Lightweight: 145 to 155 lb (67 to 70 kg)
+Welterweight: 156 to 170 lb (71 to 77 kg)
+Middleweight: 171 to 185 lb (78 to 84 kg)
+Light Heavyweight: 186 to 205 lb (85 to 93 kg)
+Heavyweight: 206 to 265 lb (94 to 120 kg)
+
+Your team will write a program that will allow users to enter their weight in kg or lbs and tell them which weight division they will be allowed to compete in.
+
+Once this requirement has been met and satisfactorily demonstrated to the client, you can enhance your program to validate all user input and ensure your code is bulletproof.
+
+
+Rules of the Code Challenge are:
+1) You must use if - else if - else statements (no switch statements allowed)
+2) You must use only a main method (no other methods or classes)
+3) If this is your first code challenge, you have to code.
+
+
+Observations:
+Your if statements do not require lots of && operators
+Reuse code, do not duplicate it.
