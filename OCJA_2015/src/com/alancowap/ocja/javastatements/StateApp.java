@@ -3,6 +3,8 @@
  *  Demo use of "if" statement
  *  Show how to use Scanner class to get user input from the command line
  *  
+ *  Improve this program using if - else if, rather than multiple if statements
+ *  
  * @author Alan Cowap 
  * @version 1.0  
  * @dependencies None
