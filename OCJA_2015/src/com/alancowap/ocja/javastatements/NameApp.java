@@ -15,13 +15,17 @@ public class NameApp {
 
 
 	public static void main(String[] args) {
-		System.out.println("Alan Cowap");
+		
+		//For loop
 		for(int i=0; i < 100; ++i){
 			System.out.println(i + "Alan");
 		}
-			
-		
 
+		//Enhanced For loop
+		String[] nobelNames = {"Einstein", "Feynman", "Heisenberg", "Schrödinger", "Bohr"};
+		for(String s : nobelNames){
+			System.out.print(s);
+		}
 		
 	}
 
