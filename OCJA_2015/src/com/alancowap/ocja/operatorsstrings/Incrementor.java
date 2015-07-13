@@ -8,7 +8,7 @@
  * @dependencies None
  *  
  */
-package com.alancowap.ocja.codechallenge.operatorsstrings;
+package com.alancowap.ocja.operatorsstrings;
 
 
 public class Incrementor {
