@@ -13,11 +13,11 @@ package com.alancowap.ocja.operatorsstrings;
 
 
 public class Person {
-	//state
+	// State
 	String name = "Bob";
 	int age = 22;
 	
-	//Behaviour
+	// Behaviour
 	public String toString(){
 		return name + " " + age;
 	}
