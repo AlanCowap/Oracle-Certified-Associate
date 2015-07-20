@@ -20,7 +20,7 @@ public class MethodMan {
 	public String getName(){
 		return "Albert";
 	}
-	public String getDept(){
+	protected String getDept(){
 		return "R&D";
 	}
 	
