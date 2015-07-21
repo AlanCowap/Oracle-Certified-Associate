@@ -15,6 +15,11 @@ public class Car {
 	
 	private String model = "ka";
 	
+	public Car(){
+		
+	}
+	
+	
 	public void setModel(String newModel){
 		this.model = newModel;
 	}
