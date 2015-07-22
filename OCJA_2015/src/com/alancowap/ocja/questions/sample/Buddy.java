@@ -1,6 +1,6 @@
 /** 
  *  OCJA Sample exam question
- *  Label, breaks and continue keywords
+ *  Label, break and continue keywords
  *  
  *  
  * @author Alan Cowap 
