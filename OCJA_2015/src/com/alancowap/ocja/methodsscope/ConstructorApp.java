@@ -25,7 +25,6 @@ public class ConstructorApp {
 		ChildClass sarah = new ChildClass(" Sarah");
 		System.out.println("Number of children is " + ChildClass.numChildren);
 		
-//		int numPeople = sissy.getNumChildren();
 	}
 
 }
