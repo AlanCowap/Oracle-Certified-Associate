@@ -20,12 +20,12 @@ public class ChildClass extends ParentClass{
 	
 	public ChildClass(String s){
 		super(s);
-		++numChildren;
+		++ChildClass.numChildren;
 		System.out.println("ChildClass Constructor ");	
 	}
 	
 	public int getNumChildren() {
-		return numChildren;
+		return ChildClass.numChildren;
 	}
 
 
