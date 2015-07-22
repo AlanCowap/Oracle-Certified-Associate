@@ -11,8 +11,6 @@
  */
 package com.alancowap.ocja.methodsscope;
 
-import com.alancowap.ocja.operatorsstrings.NumericPromotion;
-
 public class ConstructorApp {
 
 
