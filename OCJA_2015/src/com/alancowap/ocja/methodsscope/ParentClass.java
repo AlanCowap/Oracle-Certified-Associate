@@ -1,5 +1,5 @@
 /** 
- *  Class definition.
+ *  Demo use of this() to call another constructor
  *  
  *  
  *  

@@ -1,5 +1,5 @@
 /** 
- *  Simple class to demo super()
+ *  Simple class to demo super() to call a parent class constructor
  *  
  *  
  *  
