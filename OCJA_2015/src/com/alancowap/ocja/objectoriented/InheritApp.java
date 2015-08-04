@@ -39,6 +39,15 @@ public class InheritApp {
 		Duck pet6 = new Duck("Donald");
 		this.talk(pet6);
 		
+		this.moveIt(fighter1);	//Person
+		this.moveIt(pet2);		//Cat
+		this.moveIt(pet4);		//Dog
+		this.moveIt(pet6);		//Duck
+	
+		this.goToSleep(fighter1);
+		this.goToSleep(pet2);
+		this.goToSleep(pet4);
+		this.goToSleep(pet6);
 		
 	}
 	
@@ -48,5 +57,13 @@ public class InheritApp {
 		anim.makeNoise();
 	}
 	
+	private void moveIt(Animal anim){
+		anim.move();
+	}
 
+	private void goToSleep(Animal anim){
+		anim.sleep();
+	}
+	
+	
 }

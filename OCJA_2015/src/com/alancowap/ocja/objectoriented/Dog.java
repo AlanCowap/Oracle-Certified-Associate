@@ -14,8 +14,13 @@ public class Dog extends Animal{
 	
 	private static final String SOUND = "Woof";
 
+	public Dog(){}
 	public Dog(String name){
 		super(name, Dog.SOUND);
+	}
+	@Override
+	public void sleep() {
+		System.out.println("Dog sleeping");		
 	}
 	
 }

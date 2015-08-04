@@ -17,5 +17,15 @@ public class Duck extends Animal {
 	public Duck(String name){
 		super(name, Duck.SOUND);
 	}
+	
+	//Override the inherited method move()
+	public void move(){
+		System.out.println("Duck moving ...");
+	}
+
+	@Override
+	public void sleep() {
+		System.out.println("Duck sleeping");		
+	}
 
 }

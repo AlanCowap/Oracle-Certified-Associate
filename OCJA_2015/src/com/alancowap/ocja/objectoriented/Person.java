@@ -17,5 +17,11 @@ public class Person extends Animal{
 	public Person(String name){
 		super(name, Person.SOUND);
 	}
+
+	@Override
+	public void sleep() {
+		System.out.println("Person sleeping");
+		
+	}
 	
 }

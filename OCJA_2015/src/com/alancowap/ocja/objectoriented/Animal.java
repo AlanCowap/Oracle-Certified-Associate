@@ -23,8 +23,14 @@ public abstract class Animal {
 		this.sound = sound;
 	}
 	
+	abstract public void sleep();
+	
 	public void makeNoise(){
 		System.out.println(this.name + " says " + this.sound);
+	}
+	
+	public void move(){
+		System.out.println("Animal moving...");
 	}
 	
 	public String toString(){
