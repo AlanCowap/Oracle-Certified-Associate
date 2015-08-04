@@ -10,16 +10,17 @@
  */
 package com.alancowap.ocja.objectoriented;
 
-public class Cat extends Animal{
-//	private String name;
-	private static final String SOUND = "Meow!";
 
-	public Cat(String name){
-		super(name, Cat.SOUND);
+public class Dog extends Animal{
+//	private String name;
+	private static final String SOUND = "Woof";
+
+	public Dog(String name){
+		super(name, Dog.SOUND);
 	}
 	
 //	public void makeNoise(){
-//		System.out.println(this.name + " says Meow!");
+//		System.out.println(this.name + " says Woof!");
 //	}
 //	
 //	public String toString(){
@@ -27,4 +28,3 @@ public class Cat extends Animal{
 //	}
 	
 }
-

@@ -29,6 +29,12 @@ public class InheritApp {
 		Cat pet2 = new Cat("Garfield");
 		this.talk(pet);
 		this.talk(pet2);
+		
+		Dog pet3 = new Dog("Scooby");
+		Dog pet4 = new Dog("Snoopy");
+		this.talk(pet3);
+		this.talk(pet4);
+		
 	}
 	
 	private void talk(Person fighter){
@@ -36,6 +42,10 @@ public class InheritApp {
 	}
 	
 	private void talk(Cat pet){
+		pet.makeNoise();
+	}
+
+	private void talk(Dog pet){
 		pet.makeNoise();
 	}
 	

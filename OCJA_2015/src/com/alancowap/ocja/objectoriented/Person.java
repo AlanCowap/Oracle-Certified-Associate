@@ -11,20 +11,21 @@
 package com.alancowap.ocja.objectoriented;
 
 
-public class Person {
+public class Person extends Animal{
 
-	private String name;
+//	private String name;
+	private static final String SOUND = "Yay!";
 
 	public Person(String name){
-		this.name = name;
+		super(name, Person.SOUND);
 	}
 	
-	public void makeNoise(){
-		System.out.println(this.name + " says Yay!");
-	}
-	
-	public String toString(){
-		return this.name;
-	}
+//	public void makeNoise(){
+//		System.out.println(this.name + " says Yay!");
+//	}
+//	
+//	public String toString(){
+//		return this.name;
+//	}
 	
 }
