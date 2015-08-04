@@ -1,5 +1,5 @@
 /** 
- *  Simple class representing a Person.
+ *  Class definition.
  *  
  *  
  *  
@@ -10,17 +10,15 @@
  */
 package com.alancowap.ocja.objectoriented;
 
-
-public class Person {
-
+public class Cat {
 	private String name;
 
-	public Person(String name){
+	public Cat(String name){
 		this.name = name;
 	}
 	
 	public void makeNoise(){
-		System.out.println(this.name + " says Yay!");
+		System.out.println(this.name + " says Meow!");
 	}
 	
 	public String toString(){
@@ -28,3 +26,4 @@ public class Person {
 	}
 	
 }
+
