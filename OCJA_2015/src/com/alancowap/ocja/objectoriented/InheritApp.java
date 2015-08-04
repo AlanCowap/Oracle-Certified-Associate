@@ -19,31 +19,34 @@ public class InheritApp {
 	}
 
 	private void startProgram() {		
+		//Create lots of objects, all extended from Animal
 		Person fighter1 = new Person("John Doe");		
-		Animal fighter2 = new Person("Robert Poulson");
-		this.talk(fighter1);
-		this.talk(fighter2);
-		
+		Person fighter2 = new Person("Robert Poulson");
 		Cat pet = new Cat("Spot");
 		Cat pet2 = new Cat("Garfield");
-		this.talk(pet);
-		this.talk(pet2);
-		
 		Dog pet3 = new Dog("Scooby");
 		Dog pet4 = new Dog("Snoopy");
-		this.talk(pet3);
-		this.talk(pet4);
-		
 		Duck pet5 = new Duck("Daffy");
-		this.talk(pet5);
 		Duck pet6 = new Duck("Donald");
+
+		// Pass references to these objects to methods (which take an Animal reference as argument)
+		System.out.println("\nWhat do the Animals say...");
+		this.talk(fighter1);
+		this.talk(fighter2);		
+		this.talk(pet);
+		this.talk(pet2);		
+		this.talk(pet3);
+		this.talk(pet4);		
+		this.talk(pet5);
 		this.talk(pet6);
 		
+		System.out.println("\nHow do the Animals move...");
 		this.moveIt(fighter1);	//Person
 		this.moveIt(pet2);		//Cat
 		this.moveIt(pet4);		//Dog
 		this.moveIt(pet6);		//Duck
 	
+		System.out.println("\nHow do the Animals sleep...");
 		this.goToSleep(fighter1);
 		this.goToSleep(pet2);
 		this.goToSleep(pet4);
@@ -52,7 +55,8 @@ public class InheritApp {
 	}
 	
 	// Now let's try some polymorphism
-	// Is it a Dog, is it a Cat, wotevs it's an Animal
+	// Is it a Dog, is it a Cat, ..., wotevs it's an Animal
+	
 	private void talk(Animal anim){
 		anim.makeNoise();
 	}
@@ -63,7 +67,6 @@ public class InheritApp {
 
 	private void goToSleep(Animal anim){
 		anim.sleep();
-	}
-	
+	}	
 	
 }
