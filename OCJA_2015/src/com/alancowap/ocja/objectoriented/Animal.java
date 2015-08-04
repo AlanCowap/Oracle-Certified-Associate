@@ -1,5 +1,5 @@
 /** 
- *  Class definition.
+ *  Abstract class defining state and behaviour for Animals
  *  
  *  
  *  
