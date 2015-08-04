@@ -10,7 +10,6 @@
  */
 package com.alancowap.ocja.objectoriented;
 
-
 public abstract class Animal {
 	private String name;
 	private String sound;

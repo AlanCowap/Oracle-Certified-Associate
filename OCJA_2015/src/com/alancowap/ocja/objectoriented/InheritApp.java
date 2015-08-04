@@ -13,15 +13,14 @@ package com.alancowap.ocja.objectoriented;
 
 public class InheritApp {
 
-
 	public static void main(String[] args) {
 		InheritApp ia = new InheritApp();
 		ia.startProgram();
 	}
 
 	private void startProgram() {		
-		Person fighter1 = new Person("John Doe");
-		Person fighter2 = new Person("Robert Poulson");
+		Person fighter1 = new Person("John Doe");		
+		Animal fighter2 = new Person("Robert Poulson");
 		this.talk(fighter1);
 		this.talk(fighter2);
 		
@@ -35,18 +34,19 @@ public class InheritApp {
 		this.talk(pet3);
 		this.talk(pet4);
 		
+		Duck pet5 = new Duck("Daffy");
+		this.talk(pet5);
+		Duck pet6 = new Duck("Donald");
+		this.talk(pet6);
+		
+		
 	}
 	
-	private void talk(Person fighter){
-		fighter.makeNoise();
+	// Now let's try some polymorphism
+	// Is it a Dog, is it a Cat, wotevs it's an Animal
+	private void talk(Animal anim){
+		anim.makeNoise();
 	}
 	
-	private void talk(Cat pet){
-		pet.makeNoise();
-	}
 
-	private void talk(Dog pet){
-		pet.makeNoise();
-	}
-	
 }

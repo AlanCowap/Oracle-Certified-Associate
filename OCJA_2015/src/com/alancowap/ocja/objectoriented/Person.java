@@ -10,7 +10,6 @@
  */
 package com.alancowap.ocja.objectoriented;
 
-
 public class Person extends Animal{
 
 	private static final String SOUND = "Yay!";
