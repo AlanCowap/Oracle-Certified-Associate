@@ -15,6 +15,8 @@ import java.util.ArrayList;
 public class SmartApp {
 
 	public static void main(String[] args) {
+		new SmartApp();
+		
 		System.out.println("Hello SmartApp");
 		
 		ArrayList<SmartDevice> al = new ArrayList<SmartDevice>();
@@ -32,6 +34,7 @@ public class SmartApp {
 		for(SmartDevice sd : al){
 			System.out.println(sd);
 		}
+		
 		
 	}
 
