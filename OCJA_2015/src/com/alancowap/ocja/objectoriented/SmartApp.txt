@@ -1,0 +1,8 @@
+Create an abstract class called SmartDevice, which stores a String containing Manufacturer, and Model.
+Create a subclass of SmartDevice called SmartPhone, which stores a String containing a Phone Number.
+Create another subclass called SmartTablet, which stores a String containing Wifi Password.
+
+SmartDevice should have constructors that take the manufacturer and/or model as parameters.
+SmartPhone and SmartTablet should have constructors that take these parameters in addition
+ to PhoneNumber and WifiPassword respectively.
+Create 5 of each type of device, and output their details to screen.
