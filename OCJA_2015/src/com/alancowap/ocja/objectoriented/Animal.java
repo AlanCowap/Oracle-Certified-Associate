@@ -10,7 +10,7 @@
  */
 package com.alancowap.ocja.objectoriented;
 
-public abstract class Animal {
+public abstract class Animal implements Spawnable{
 	private String name;
 	private String sound;
 	

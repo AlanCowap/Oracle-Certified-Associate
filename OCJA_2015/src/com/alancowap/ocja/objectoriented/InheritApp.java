@@ -10,7 +10,6 @@
  */
 package com.alancowap.ocja.objectoriented;
 
-
 public class InheritApp {
 
 	public static void main(String[] args) {
@@ -52,6 +51,11 @@ public class InheritApp {
 		this.goToSleep(pet4);
 		this.goToSleep(pet6);
 		
+		System.out.println("\nHow do the Animals spawn...");
+		this.reSpawn(fighter1);
+		this.reSpawn(pet2);
+		this.reSpawn(pet4);
+		this.reSpawn(pet6);
 	}
 	
 	// Now let's try some polymorphism
@@ -68,5 +72,14 @@ public class InheritApp {
 	private void goToSleep(Animal anim){
 		anim.sleep();
 	}	
+	
+	private void reSpawn(Spawnable sp){
+		sp.spawn();
+		
+		if (sp instanceof Spawnable){
+			Animal an = (Animal) sp;
+			an.sleep();
+		}
+	}
 	
 }

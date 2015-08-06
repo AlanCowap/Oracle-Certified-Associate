@@ -24,4 +24,8 @@ public class Person extends Animal{
 		
 	}
 	
+	public void spawn(){
+		System.out.println("Human spawning...");
+	}
+	
 }

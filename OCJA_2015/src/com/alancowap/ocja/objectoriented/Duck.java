@@ -28,4 +28,9 @@ public class Duck extends Animal {
 		System.out.println("Duck sleeping");		
 	}
 
+	public void spawn(){
+		// empty implementations
+	}
+
+	
 }

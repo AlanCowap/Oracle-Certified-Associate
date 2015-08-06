@@ -22,5 +22,9 @@ public class Dog extends Animal{
 	public void sleep() {
 		System.out.println("Dog sleeping");		
 	}
-	
+
+	public void spawn(){
+		System.out.println("Dog spawning...");
+	}
+
 }
