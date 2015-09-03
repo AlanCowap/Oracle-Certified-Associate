@@ -11,7 +11,7 @@
 package com.alancowap.ocja.operatorsstrings;
 
 
-public class Incrementor {
+public class Incrementor implements com.alancowap.ocja.questions.sample.Interfacio{
 
 	
 	public static void main(String[] args) {
@@ -28,4 +28,5 @@ public class Incrementor {
 
 	}
 
+	public void doStuff(){}
 }
