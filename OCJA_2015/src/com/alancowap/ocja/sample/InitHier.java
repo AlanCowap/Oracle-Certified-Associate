@@ -5,6 +5,7 @@
  *  
  * @author Alan Cowap 
  * @version 1.0  Basic class hierarchy: Top - Middle - Bottom
+ * @version 1.1  Add another static variable to Bottom to demo order of execution of static variables and code blocks. Thx to ThomasMcS for suggesting this addition!
  * @dependencies None
  *  
  */
@@ -48,6 +49,7 @@ class Bottom extends Middle{
 	int doBotInstNum(int num){System.out.println("inst Bottom num " + num); return num;}
 
 	static{System.out.println("static Bottom");}
+	static int botStatNum2 = Bottom.doNum(2);
 	{System.out.println("non-static Bottom");}
 	Bottom(){System.out.println("construct Bottom");}
 }
