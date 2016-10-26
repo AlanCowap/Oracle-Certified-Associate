@@ -8,7 +8,8 @@
  * @version 1.0  
  * @dependencies None
  *  
- */package com.alancowap.ocja.operatorsstrings;
+ */
+package com.alancowap.ocja.operatorsstrings;
 
 public class Tern{
 	public static void main(String[] args){
