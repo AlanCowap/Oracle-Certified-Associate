@@ -1,5 +1,6 @@
 /** 
- *  Demo Random
+ *  Demo java.util.Random
+ *  Demo int to char to unicode conversion using casting
  *  
  *  
  *  
