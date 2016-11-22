@@ -1,0 +1,28 @@
+Create a CLI program named RandomString which will generate a random number of words (1..100), 
+each word of random length (1..10), containing random letters (a..z) - and display them.
+Use notepad and command prompt for your program.
+Note: There may be changes to requirements.
+
+Thanks,
+Cranky Customer Inc.
+--
+
+Updated Requirements:
+0) Modify your app to use a GUI.
+Enhance your app so that it creates sentences containing a random number of words (1..15).
+Each sentence should begin with an uppercase letter and end with a period / full stop.
+
+1) Enhance your app to sort the words in lexicographical order and display in them in order in
+ a second area of your GUI
+Hint: You can use Arrays.sort() to sort the words
+You should then write a method which validates the words are sorted correctly. Hint: String.compareTo();
+
+2) Enhance your app to display the Hex Unicode value of the sorted words and display them in
+ a third area of yoru GUI.
+Format the display so it appears orderly.
+
+3) Provide a button which will take the Hex unicode value in the third area of your GUI and convert
+them to Decimal Unicode values and display them in a fourth area of your GUI.
+
+Thanks,
+Cranky Customer Inc.
