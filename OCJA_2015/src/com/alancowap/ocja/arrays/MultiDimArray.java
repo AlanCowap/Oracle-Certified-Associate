@@ -1,3 +1,17 @@
+/** 
+ *  Demo multi-dimensional arrays
+ *  
+ *  
+ *  
+ *  
+ *  
+ * @author Alan Cowap 
+ * @version 1.0  
+ * @dependencies None
+ *  
+ */
+package com.alancowap.ocja.arrays;
+
 public class MultiDimArray{
 	public static void main(String[] args){
 		System.out.println("Multi Dimensional Arrays");

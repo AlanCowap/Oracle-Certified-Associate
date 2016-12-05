@@ -1,3 +1,14 @@
+/** 
+ *  Demo abstract class, abstract method
+ *  
+ *  
+ *  
+ * @author Alan Cowap 
+ * @version 1.0  
+ * @dependencies None
+ *  
+ */
+package com.alancowap.ocja.objectoriented;
 abstract class Device{
 	protected int serialNumber = 0;
 	public abstract void switchOn();

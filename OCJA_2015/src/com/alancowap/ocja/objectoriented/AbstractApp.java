@@ -1,3 +1,15 @@
+/** 
+ *  Demo abstract class, polymorphism
+ *  
+ *  
+ *  
+ * @author Alan Cowap 
+ * @version 1.0  
+ * @dependencies None
+ *  
+ */
+package com.alancowap.ocja.objectoriented;
+
 public class AbstractApp{
 	public static void main(String[] args){
 		System.out.println("Abstract classes");

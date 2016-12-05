@@ -1,3 +1,15 @@
+/** 
+ *  Demo operator precedence.
+ *  
+ *  
+ *  
+ * @author Alan Cowap 
+ * @version 1.0  
+ * @dependencies None
+ *  
+ */
+package com.alancowap.ocja.questions.sample;
+
 public class PrecApp{
 	public static void main(String[] args){
 		// Which lines of code give an answer of 14

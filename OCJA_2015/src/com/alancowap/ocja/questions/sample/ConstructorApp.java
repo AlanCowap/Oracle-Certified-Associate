@@ -1,3 +1,15 @@
+/** 
+ *  Demo access modifiers for classes, constructors
+ *  
+ *  
+ *  
+ * @author Alan Cowap 
+ * @version 1.0  
+ * @dependencies None
+ *  
+ */
+package com.alancowap.ocja.questions.sample;
+
 import java.util.Arrays;
 
 //Top level class can be default or public access, protected and private not allowed
@@ -19,6 +31,7 @@ public class ConstructorApp{
 	public static void main(String[] args){
 		ConstructorApp ca = new ConstructorApp();
 		ca.ConstructorApp();
+		
 		String[] arr = new String[5];
 		// arr.fill(arr, "initial"); // no such method
 		Arrays.fill(arr, "initial");
