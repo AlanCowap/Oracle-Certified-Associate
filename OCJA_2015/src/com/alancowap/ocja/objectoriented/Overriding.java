@@ -1,5 +1,5 @@
 /** 
- *  Test Class to demo polymorphic references.
+ *  Demo polymorphic references.
  *  
  *  
  *  
@@ -10,16 +10,16 @@
  */
 package com.alancowap.ocja.objectoriented;
 
-public class Test {
-public boolean equals( Test 
+public class Overriding {
+public boolean equals( Overriding 
 other ) {
 	System.out.println( "Inside of Test.equals" );
 	return false;
 }
 public static void main( String [] args ) {
-  Object t1 = new Test();
-  Object t2 = new Test();
-  Test t3 = new Test();
+  Object t1 = new Overriding();
+  Object t2 = new Overriding();
+  Overriding t3 = new Overriding();
   Object o1 = new Object();
   int count = 0;
   System.out.println( count++ );// prints 0
