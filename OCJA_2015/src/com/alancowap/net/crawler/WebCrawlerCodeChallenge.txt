@@ -1,0 +1,34 @@
+Code Challenge: Web Crawler
+C# Ref: Programming in C# Objective 4.1
+Java Ref: https://github.com/AlanCowap/OCJA2015/tree/ICT-AP/OCJA_2015/src/com/alancowap/net/crawler
+
+Create a GUI driven app that allows the user to specify (in a text box) a URI e.g. a web page on a remote web server.
+- download and display the contents of this web page (you do not have to parse the page)
+- in a separate part of your GUI display all the email addresses on the web page (and a count)
+- in a separate part of your GUI display all the URLs on the web page (and a count)
+
+Ensure your program is robust and bulletproof, it will be tested at the demo.
+Demo time is 12:00pm
+
+Go through each URL, visit it and download the URLs from each of those web pages. (provide a count)
+Enhance your App so the user can specify to what depth they wish to retrieve URLs, you chould provide a count of all links
+Depth 1 is the root page you started with, Depth 2 is the links from the root page, Depth 3 ...
+Demo time is 3:00pm
+
+
+
+
+
+
+
+
+
+
+
+--
+
+
+Further enhance your program to store the links in a database. Each link entry should contain a reference to it's parent.
+Modify your app to display a list of the most popular URLs including a count for the links to it.
+
+
