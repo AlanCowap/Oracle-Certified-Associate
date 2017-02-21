@@ -23,7 +23,7 @@ public class WebCrawler {
 	 * @param args command line parameters - not used.
 	 */
 	public static void main(String[] args) {
-		String fileURL = "http://www.weather.ie/";
+		String fileURL = "http://www.weather.ie"; //don't use a trailing / 
 		String saveDir = "c:\\code\\temp\\";
 		try {
 			HttpDownloadUtility.downloadFile(fileURL, saveDir);
