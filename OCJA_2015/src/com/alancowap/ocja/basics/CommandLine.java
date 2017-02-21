@@ -1,4 +1,14 @@
-package com.alancowap.ocja.commandline;
+/** 
+ *  Demo how to use Command Line
+ *  
+ *  
+ *  
+ * @author Alan Cowap 
+ * @version 1.0  
+ * @dependencies None
+ *  
+ */
+package com.alancowap.ocja.basics;
 
 public class CommandLine{
 	public static void main(String[] args){
@@ -7,5 +17,5 @@ public class CommandLine{
 }
 
 // javac -d classes CommandLine.java
-// java -cp classes com.alancowap.ocja.commandline.CommandLine
+// java -cp classes com.alancowap.ocja.basics.CommandLine
 // ensure the classes directory exists first
