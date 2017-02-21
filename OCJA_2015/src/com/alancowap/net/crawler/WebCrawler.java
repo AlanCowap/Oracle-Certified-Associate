@@ -25,9 +25,9 @@ public class WebCrawler {
 			fileUrl = args[0]; //don't use a trailing / 
 			saveDir = args[1];
 		}else{
-			System.err.println("Commandline Usage: WebCrawler <URL> <Directory> \ne.g. WebCrawler http://www.alancowap.com c:\\temp");
+			System.out.println("Commandline Usage: WebCrawler <URL> <Directory> \ne.g. WebCrawler http://www.alancowap.com c:\\temp");
 			fileUrl = "http://www.alancowap.com/2015/05/23/maths-puzzles-are-fun"; //don't use a trailing / 
-			saveDir = "c:\\code\\temp\\";
+			saveDir = "c:\\code\\temp";
 		}
 		System.out.printf("\nSaving to %s from URL %s\n", saveDir, fileUrl);
 

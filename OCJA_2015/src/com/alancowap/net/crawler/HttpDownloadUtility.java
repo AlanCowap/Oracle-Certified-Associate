@@ -1,11 +1,12 @@
 /** 
  *  Utility class to download a webpage, display it, and save to file
  *  Based on code from UtkarshBhavsar (see link below) post in StackOverflow
- *   *  
+ *  
  *  
  * @author Alan Cowap 
  * @version 1.0 	Initial revision
  * @version 1.0.1	Output save file location
+ * @version 1.0.2	Validate and Create directory if necessary, handle Exceptions otherwise
  * @dependencies None
  *  
  */
@@ -22,6 +23,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.file.FileAlreadyExistsException;
+import java.nio.file.Files;
+import java.nio.file.InvalidPathException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class HttpDownloadUtility {
 	private static final int BUFFER_SIZE = 4096;
@@ -33,8 +39,20 @@ public class HttpDownloadUtility {
 	 * @throws IOException
 	 */
 	public static void downloadFile(String fileURL, String saveDir) throws IOException{
-		URL url = new URL(fileURL);
-		HttpURLConnection httpConn = (HttpURLConnection) url.openConnection();
+		try {
+			Path path = Paths.get(saveDir);		
+			Files.createDirectory(path);
+			System.out.println("Successfully created directory " + path.toString());
+		} catch (InvalidPathException e) {
+			System.err.println("Sorry I can't convert that path into a useful directory, so I have to stop :(");
+			e.printStackTrace();
+			return;			
+		} catch(FileAlreadyExistsException faee){
+			System.out.println("Directory already exits, proceeding.");
+		}
+		
+		URL url = new URL(fileURL); 
+		HttpURLConnection httpConn = (HttpURLConnection) url.openConnection(); 
 		int responseCode = httpConn.getResponseCode();
 
 		// always check HTTP response code first
@@ -66,8 +84,9 @@ public class HttpDownloadUtility {
 			InputStream inputStream = httpConn.getInputStream();
 			String saveFilePath = saveDir + File.separator + fileName;
 
+			System.out.println("Save File Path: " + saveFilePath);
 			// opens an output stream to save into file
-			FileOutputStream outputStream = new FileOutputStream(saveFilePath);
+			FileOutputStream outputStream = new FileOutputStream(saveFilePath);			
 
 			int bytesRead = -1;
 			byte[] buffer = new byte[BUFFER_SIZE];
