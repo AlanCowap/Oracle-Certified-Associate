@@ -31,8 +31,7 @@ public class HttpDownloadUtility {
 	 * @param saveDir path of the directory to save the file
 	 * @throws IOException
 	 */
-	public static void downloadFile(String fileURL, String saveDir)
-			throws IOException {
+	public static void downloadFile(String fileURL, String saveDir) throws IOException {
 		URL url = new URL(fileURL);
 		HttpURLConnection httpConn = (HttpURLConnection) url.openConnection();
 		int responseCode = httpConn.getResponseCode();
