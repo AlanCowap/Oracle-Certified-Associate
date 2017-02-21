@@ -4,7 +4,8 @@
  *   *  
  *  
  * @author Alan Cowap 
- * @version 1.0  
+ * @version 1.0 	Initial revision
+ * @version 1.0.1	Output save file location
  * @dependencies None
  *  
  */
@@ -77,7 +78,7 @@ public class HttpDownloadUtility {
 			outputStream.close();
 			inputStream.close();
 
-			System.out.println("File downloaded");
+			System.out.printf("File downloaded to %s%s\n", saveDir, fileName);
 		} else {
 			System.out.println("No file to download. Server replied HTTP code: " + responseCode);
 		}
