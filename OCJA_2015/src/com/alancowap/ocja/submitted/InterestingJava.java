@@ -1,21 +1,17 @@
-package com.alancowap.ocja.submitted;
 /** 
  *  Various interesting features of Java
+ *   - main method in abstract class
  *   - break to label within an if statement, goto, StringBuilder mutability,
  *   - String.replace() inconsistent behaviour between overloaded methods: char vs CharSequence
  *   - implicit conversion of primitives by assignment and compound assignment operators, compiler range checking. 
- *  Based on code from David Mackessy 
- *   *  
- * @author Alan Cowap 
+ *  Based on original code from David Mackessy 
+ * 
+ * @author David Mackessy, modified by Alan Cowap
  * @version 1.0  Initial revision
  * @dependencies None
  *  
  */
-
-/**
- * @author David Mackessy
- *
- */
+package com.alancowap.ocja.submitted;
 
 /*
 * valid compile & run in abstract class
@@ -45,8 +41,6 @@ public abstract class InterestingJava{
 }
 
 */
-
-
 
 
 public class InterestingJava{
@@ -87,7 +81,7 @@ public class InterestingJava{
 
 		//compound operators do explicit casts
 		byte myByte = 8;	//does implicit conversion if range check is ok
-		float myFloat = 4.5f; 
+		float myFloat = 4.5f;
 
 		myByte += myFloat;	//equivalent to myByte = (byte) (myByte + myFloat);
 		//myByte = (byte) (myByte + myFloat);
