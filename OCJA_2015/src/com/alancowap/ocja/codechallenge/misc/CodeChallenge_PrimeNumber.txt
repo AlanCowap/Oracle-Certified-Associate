@@ -1,0 +1,34 @@
+Create a CLI program named PrimeNumberApp which will generate a list of Prime Numbers.
+A prime number is any Natural number with only two factors - itself and 1.
+i.e. a positive whole number which can wholly divided by only itself and 1.
+Note that 0 and 1 are not considred Prime numbers.
+The requirement here is to get a demo app up ASAP, time to MVP is critical.
+The deadline is 11:15am, if you don't have a demo then you miss the next funding round and go out of
+business due to cash flow problems.
+
+Use notepad and command prompt for your program.
+Note: There may be changes to requirements.
+Thanks,
+Cranky Customer Inc.
+
+
+--
+Updated Requirements:
+0) Upgrade your App to use a GUI.
+Create a wireframe BEFORE you start your GUI, and be able to justify your design choices.
+
+1) Optimise your code so that it is as time efficient as possible.
+Briefly describe in your code the steps you did to achieve this.
+
+2) Further optimise your code so that it is as memory efficient as possible (without comprimising speed).
+Briefly describe in your code the steps you did to achieve this.
+
+3) Refactor your code so that it conforms to good design and coding principles.
+List in your code the steps you did to achieve this.
+
+4) Bonus requirement: Make your GUI responsive. Hint: this will require you to use Threads.
+
+5) Have you tested your code?
+
+Thanks,
+Cranky Customer Inc.
