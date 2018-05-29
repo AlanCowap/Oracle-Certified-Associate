@@ -1,9 +1,9 @@
 # Oracle Certified Associate - Java Programmer 1
 Code for students taking the Oracle Certified Associate Java Programmer 1 (1ZO-803, 1Z0-808)
 
-Choose the correct branch for you:
-'Master' is 1Z0-808 - Oracle Certified Associate Java Programmer 1 for Java version 8.
-'1Z0-803' is for 1Z0-803 - Oracle Certified Associate Java Programmer 1 for Java version 7.
+Choose the correct branch for you: <br>
+'Master' is 1Z0-808 - Oracle Certified Associate Java Programmer 1 for Java version 8. <br>
+'1Z0-803' is for 1Z0-803 - Oracle Certified Associate Java Programmer 1 for Java version 7. <br>
 
 P.S.
 You may also be interested in my repo for the Oracle Certified Professional Java Programmer 2 (1ZO-804) https://github.com/AlanCowap/Oracle-Certified-Professional
