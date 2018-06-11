@@ -18,4 +18,4 @@ public class CommandLine{
 
 // javac -d classes CommandLine.java
 // java -cp classes com.alancowap.ocja.basics.CommandLine
-// ensure the classes directory exists first
+// ensure the classes directory exists first e.g. mkdir classes

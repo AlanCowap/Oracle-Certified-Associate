@@ -1,3 +1,15 @@
+/** 
+ *  Demo primitve variables, object reference variables (ORV) 
+ *   - default values
+ *   
+ *  
+ *  
+ *  
+ * @author Alan Cowap 
+ * @version 1.0  
+ * @dependencies None
+ *  
+ */
 package com.alancowap.ocja.basics;
 
 class Primitives{
