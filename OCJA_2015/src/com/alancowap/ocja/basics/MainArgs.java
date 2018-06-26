@@ -42,7 +42,7 @@ Write a program that will take up to 10 numbers as command line
 class MainArgs{
 //...
 //String args[ ]
-//String args[/*Post no-comments*/]
+//String args[/*Post no-comments*/ //]
 
 //	public /**/static/**/ void/**/ main/**/(/**/String/**/  [] /* */ args/**/){
 //		System.out.println("MainArgs");
