@@ -14,6 +14,8 @@ import 	com.alancowap.ocja.accesscontrol.Top;
 
 public class Middle extends Top{
 
+	public int num;
+	
 	public void accessTop() {
 		Top myTop = new Top();
 		//myTop.defaultNumber = 2;	//can't access default member from outside package
