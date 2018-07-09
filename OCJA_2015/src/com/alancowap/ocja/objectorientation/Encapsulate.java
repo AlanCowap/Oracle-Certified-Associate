@@ -1,6 +1,7 @@
 /** 
  *  Demo of Encapsulation
  *   - restrict variable access, expose an API, use JavaBeans convention.
+ *   - allows validation, restricted access (e.g. no setter).
  *   
  *  
  * @author Alan Cowap 
