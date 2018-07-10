@@ -1,6 +1,6 @@
 /** 
  *  Demo of Polymorphism
- *  - polymorphic references for classess and interfaces
+ *  - polymorphic references for classes and interfaces
  *  - IS-A test
  *  - Compiler looks at declared type of variable
  *  - Runtime dynamically uses object at runtime for instance methods. 
