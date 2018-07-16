@@ -1,4 +1,3 @@
-package com.alancowap.ocja.objectorientation;
 /** 
  *  Demo of Constructor Calling
  *  - no-args constructor
@@ -12,6 +11,8 @@ package com.alancowap.ocja.objectorientation;
  * @dependencies None
  *  
  */
+package com.alancowap.ocja.objectorientation;
+
 public class Parent {
 
 	private int num;

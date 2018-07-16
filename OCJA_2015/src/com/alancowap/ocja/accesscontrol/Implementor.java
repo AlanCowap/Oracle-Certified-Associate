@@ -8,7 +8,6 @@
  * @dependencies None
  *  
  */
-
 package com.alancowap.ocja.accesscontrol;
 
 public class Implementor implements Demoable{
