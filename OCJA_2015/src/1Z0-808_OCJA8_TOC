@@ -1,0 +1,10 @@
+Package Guide for 1Z0-808, Oracle Certified Associate Java SE 8 - Programmer 1 
+
+com.alancowap.ocja.accesscontrol
+com.alancowap.ocja.objectorientation
+com.alancowap.ocja.assignments
+
+Upcoming packages:
+operators
+flow control and exceptions
+strings arrays arraylists dates lambdas
