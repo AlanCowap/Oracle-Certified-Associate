@@ -1,7 +1,7 @@
 /** 
  *  Demo of Scope of variables
  *   - static, instance, non-static initializer, method local, block
- *   
+ *   - initialised (class, object variables) and un-initialised (local variables)
  *  
  * @author Alan Cowap 
  * @version 1.0  
