@@ -11,8 +11,6 @@
  * @dependencies None
  *  
  */
-
-
 package com.alancowap.ocja.assignments;
 
 public class Primitives {
