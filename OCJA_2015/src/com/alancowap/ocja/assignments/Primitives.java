@@ -1,10 +1,11 @@
 /** 
- *  Demo of Primitive Casting, Underscores, Literals
+ *  Demo of Primitive Casting, Underscores, Literals.
  *  Underscores introduced in Java 7 
  *  - underscores must be between digits
  *  Literals
  *  - binary literals introduced in Java 7
- *   
+ *  Casting
+ *   - primitives, implicit & explicit (widening & narrowing)
  *  
  * @author Alan Cowap 
  * @version 1.0  
