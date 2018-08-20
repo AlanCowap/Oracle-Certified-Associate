@@ -2,6 +2,7 @@
  *  Demo of Scope of variables
  *   - static, instance, non-static initializer, method local, block
  *   - initialised (class, object variables) and un-initialised (local variables)
+ *   - shadowing (re-using an identifier that is already in use in the current scope)
  *  
  * @author Alan Cowap 
  * @version 1.0  
@@ -25,7 +26,7 @@ public class Scope {
 		System.out.printf("classScope is %d, objectScope is %d", Scope.classScope, scope.objectScope);
 //		int num = initializerScope; //No, initializerScope is out of scope.
 		
-		//Shadow
+		//Shadowing
 		int classScope=4, objectScope=5;
 		System.out.printf("\n(local)classScope is %d, (local)objectScope is %d", classScope, objectScope);
 		
