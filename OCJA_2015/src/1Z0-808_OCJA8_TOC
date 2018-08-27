@@ -4,9 +4,9 @@ com.alancowap.ocja.accesscontrol
 com.alancowap.ocja.objectorientation
 com.alancowap.ocja.assignments
 com.alancowap.ocja.operators
+com.alancowap.opcja.flowcontrolexceptions
 
 Upcoming packages:
-flow control and exceptions
 strings arrays arraylists dates lambdas
 
 All other Packages relate to 1Z0-803, Oracle Certified Associate Java SE 7 - Programmer 1
