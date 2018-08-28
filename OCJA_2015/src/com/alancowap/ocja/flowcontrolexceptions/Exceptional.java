@@ -90,7 +90,7 @@ public class Exceptional {
 	//Use Checked Exceptions i.e. those that are children of Exception (but not RuntimeException)
 	private void checkedException()  {
 		try {
-			FileReader f = new FileReader("test.txt");//creates test.txt if not exists
+			FileReader f = new FileReader("test.txt");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 			System.err.println("Oops, a FileNotFoundException ocurred");
@@ -106,7 +106,7 @@ public class Exceptional {
 	private void tryFinally() throws FileNotFoundException {
 		PrintStream p = null;
 		try {
-			p = new PrintStream("test.txt");
+			p = new PrintStream("test.txt");//creates test.txt if it does not exist
 			p.append("Hello World\n");
 			System.out.println("PrintStream opened");
 			return; //finally will still be executed, even with a return in the try!
