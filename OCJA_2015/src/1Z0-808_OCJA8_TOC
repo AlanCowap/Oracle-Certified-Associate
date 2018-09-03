@@ -4,10 +4,11 @@ com.alancowap.ocja.accesscontrol
 com.alancowap.ocja.objectorientation
 com.alancowap.ocja.assignments
 com.alancowap.ocja.operators
-com.alancowap.opcja.flowcontrolexceptions
+com.alancowap.ocja.flowcontrolexceptions
 
 Upcoming packages:
-strings arrays arraylists dates lambdas
+com.alancowap.ocja.stringsarrays
+ - strings arrays arraylists dates lambdas
 
 All other Packages relate to 1Z0-803, Oracle Certified Associate Java SE 7 - Programmer 1
 Note that many of the Java SE 7 packages are also useful for Java SE 8.
