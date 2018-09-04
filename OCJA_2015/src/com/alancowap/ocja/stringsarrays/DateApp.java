@@ -36,7 +36,7 @@ public class DateApp {
 		System.out.printf("Days remaining on course %d\n", daysRemaining);
 		
 		double percentageRemaining = ((double) daysRemaining / (daysRemaining + daysDone)) * 100;
-		System.out.printf("Percentage remaining %f\n", percentageRemaining);
+		System.out.printf("Percentage remaining %2.2f%%\n", percentageRemaining);
 		
 		//Formatted output
 		System.out.println(now.format(dtf));
