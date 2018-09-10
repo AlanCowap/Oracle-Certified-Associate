@@ -12,8 +12,6 @@
  * @dependencies None
  *  
  */
-//
-
 package com.alancowap.ocja.stringsarrays;
 
 import java.time.format.DateTimeFormatter;
