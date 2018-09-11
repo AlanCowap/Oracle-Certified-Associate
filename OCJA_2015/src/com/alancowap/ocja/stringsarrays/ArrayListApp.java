@@ -33,7 +33,7 @@ public class ArrayListApp {
 			System.out.printf("%s says woof, I'm %d long!\n", s, s.length());
 		}
 		petList.add(1, "Rover");
-		//petList.sort(c);//TODO implement comparator
+		//petList.sort(c);//implement comparator as example - see ComparaLambda.java
 		
 		petList.clear();
 		System.out.println("Clear " +petList + " " + petList.size());
