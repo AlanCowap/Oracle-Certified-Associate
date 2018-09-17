@@ -1,7 +1,8 @@
 /** 
  *  Demo initialization blocks, constructors 
  *  - static and non-static initialization blocks
- *  - single classes and order of execution of init blocks and constructors 
+ *  - single classes and order of execution of init blocks and constructors
+ *  -  and initialisation of class variables and instance variables.
  *  Code blocks and empty statements
  *  
  *  
@@ -14,15 +15,18 @@
 package com.alancowap.ocja.objectorientation;
 
 public class InitializationSingle {
-	static {System.out.println("static init");}
-	{System.out.println("non static init");}
+	private static int num = InitializationSingle.classVariableInit();
+	static {System.out.println("static init block");}
+	private int numnum = InitializationSingle.objectVariableInit();
+	{System.out.println("non static init block");}
 	
 	public InitializationSingle() {
 		System.out.println("Constructor");
 	}
 
 	public static void main(String[] args) {
-		System.out.println("Main");
+		System.out.println("Main (static)");
+		System.out.println("~~Everything above is static. Everything below is non-static.");
 		new InitializationSingle();
 		
 		{System.out.println("Just a code block");}
@@ -34,11 +38,23 @@ public class InitializationSingle {
 		
 	}
 	
+	private static int classVariableInit() {
+		System.out.println("classVariableInit");
+		return 42;
+	}
+	private static int objectVariableInit() {
+		System.out.println("objectVariableInit");
+		return 0;
+	}
+	
 }
 
 //Output:
-//static init
-//Main
-//non static init
+//classVariableInit
+//static init block
+//Main (static)
+//~~Everything above is static. Everything below is non-static.
+//objectVariableInit
+//non static init block
 //Constructor
 //Just a code block
