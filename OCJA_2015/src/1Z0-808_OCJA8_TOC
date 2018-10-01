@@ -6,6 +6,7 @@ com.alancowap.ocja.assignments
 com.alancowap.ocja.operators
 com.alancowap.ocja.flowcontrolexceptions
 com.alancowap.ocja.stringsarrays
+com.alancowap.ocja.examquestions;
 
 Upcoming packages:
 <None> 
