@@ -17,10 +17,12 @@ public class EnthuExam02 {
 		EnthuExam02 ex2 = new EnthuExam02();
 		ex2.q14();
 		ex2.q29();
+		ex2.q56();
 
 	}
 	
 	private void q14() {
+		System.out.println("\nQ14");
 		//you can use a literal false in an if statement.
 		if(false)
 			System.out.println("Unreachable code, but allowed");
@@ -31,6 +33,7 @@ public class EnthuExam02 {
 	}
 
 	private void q29() {
+		System.out.println("\nQ29");
 		ArrayList<StringBuilder> arr = new ArrayList<>(3);
 		arr.add(new StringBuilder("Bill Joy"));
 		arr.add(new StringBuilder("James Gosling"));
@@ -45,10 +48,28 @@ public class EnthuExam02 {
 		
 		StringBuilder sb2;
 //		for(sb2 : arr) {} //No. must define varaible within the enhanced for loop
-	}
-	
+	}	
 	private void someOtherMethod(StringBuilder sb) {
 		sb = new StringBuilder("");
 		return;
 	}
+	
+	private void q56() {
+		System.out.println("\nQ56");
+		Top t = new Top();
+		t.myMethod();	//as expected		
+		t = new Middle();//runtime look right, i is initialized with default value 0
+		t.myMethod();	//by now i has been assigned a value of 10
+	}
 }
+
+class Top{
+	Top(){myMethod();}
+	void myMethod() {System.out.println("Top o' the mornin' to ya!");}
+}
+
+class Middle extends Top{
+	int i = 10;
+	void myMethod() {System.out.println("Middle o' the mornin' to ya!" + i);}
+}
+
