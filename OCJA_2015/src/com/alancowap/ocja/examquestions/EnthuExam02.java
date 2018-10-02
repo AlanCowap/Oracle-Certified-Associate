@@ -16,9 +16,9 @@ public class EnthuExam02 {
 	public static void main(String[] args) {
 		EnthuExam02 ex2 = new EnthuExam02();
 		ex2.q14();
+		ex2.q19();
 		ex2.q29();
 		ex2.q56();
-
 	}
 	
 	private void q14() {
@@ -30,6 +30,23 @@ public class EnthuExam02 {
 			System.out.println("You can reach me if he is false");
 		}
 		System.out.println("Print me");
+	}
+	
+	private void q19() { //labels
+		EMPTY:;	//It is legal to label a statement, including empty statement
+		BLOCKY:{}
+		STATEMENT: System.out.println("Ok");
+		
+		//want to find 1,1
+		OUTER: for(int i=0; i < 3; ++i) {
+			INNER: for(int j=0; j < 3; ++j) {				
+				STA: System.out.println(i+","+j);
+//				if(1==i && 1==j) break STA; //No. Can't break to a non-loop.
+			}
+			System.out.println("After inner");
+		}
+		
+	
 	}
 
 	private void q29() {
@@ -69,6 +86,7 @@ class Top{
 }
 
 class Middle extends Top{
+	Middle(){System.out.println("Middle o' the constructor to ya!" + i);i=5;}
 	int i = 10;
 	void myMethod() {System.out.println("Middle o' the mornin' to ya!" + i);}
 }
