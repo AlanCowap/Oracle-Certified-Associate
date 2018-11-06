@@ -1,7 +1,7 @@
 /** 
  * Sample code based on mock-exam questions.
  * - Wrapper classes, equality operator ==, equals() method.   
- * - Exceptions: Throwables printStackTrace(), and overriden toString() methods
+ * - Exceptions: Throwables printStackTrace(), and overridden toString() methods
  *  
  * @author Alan Cowap 
  * @version 1.0  
@@ -14,8 +14,9 @@ public class Miscellaneous {
 
 	public static void main(String[] args) {
 		Miscellaneous m = new Miscellaneous();
-		m.wrapperEquality();
-		m.exceptions();
+//		m.wrapperEquality();
+//		m.exceptions();
+		m.method1();
 	}
 
 	private void wrapperEquality() {
@@ -63,13 +64,22 @@ public class Miscellaneous {
 		
 	}
 	
+	private void method1() {method2();}
+	private void method2() {method3();}
+	private void method3() {method4();}
+	private void method4() {exceptions();}
+	
+	
 	private void exceptions() {
 		System.out.println("\nEXCEPTIONS\n");
 		try {
 			throw new CustomException("I'm throwing a CustomException");
+//			throw new Exception("I'm throwing an Exception");
 		}catch(CustomException ce) {
 			System.out.println(ce);	//Throwables overridden toString() method
 			ce.printStackTrace();	//Throwables printStackTrace() method
+		}catch (Exception e) {
+			e.printStackTrace();
 		}
 		
 		System.out.println("\nFinished Exceptions");
