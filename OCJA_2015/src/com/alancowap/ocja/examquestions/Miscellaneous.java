@@ -1,7 +1,7 @@
 /** 
  * Sample code based on mock-exam questions.
- * - Wrapper classes. == versus equals()   
- *  
+ * - Wrapper classes, equality operator ==, equals() method.   
+ * - Exceptions: Throwables printStackTrace(), and overriden toString() methods
  *  
  * @author Alan Cowap 
  * @version 1.0  
@@ -15,7 +15,7 @@ public class Miscellaneous {
 	public static void main(String[] args) {
 		Miscellaneous m = new Miscellaneous();
 		m.wrapperEquality();
-
+		m.exceptions();
 	}
 
 	private void wrapperEquality() {
@@ -55,13 +55,29 @@ public class Miscellaneous {
 		System.out.println(k == j); //false
 		System.out.println(i == l); //false
 		
-		Integer m = 127; //numeric literal in range of Byte => object constant pool
+		Integer m = 127; //numeric literal in range of byte => Constant Pool
 		Integer p = 127;
 		System.out.println(m == p); //true
 		m++; p++;	//unwrap, increment, wrap.
-		System.out.println(m == p); //false - now outside of Constant Pool
-		
+		System.out.println(m == p); //false - now outside of Constant Pool		
 		
 	}
 	
+	private void exceptions() {
+		System.out.println("\nEXCEPTIONS\n");
+		try {
+			throw new CustomException("I'm throwing a CustomException");
+		}catch(CustomException ce) {
+			System.out.println(ce);	//Throwables overridden toString() method
+			ce.printStackTrace();	//Throwables printStackTrace() method
+		}
+		
+		System.out.println("\nFinished Exceptions");
+	}
+	
+}
+
+class CustomException extends Exception{
+	CustomException(){super();}
+	CustomException(String msg){super(msg);}
 }
